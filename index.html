@@ -63,6 +63,12 @@
         pre { background-color: #212529; color: #f8f9fa; padding: 15px; border-radius: 6px; overflow-x: auto; direction: ltr; text-align: left; }
         pre code { background-color: transparent; color: inherit; padding: 0; }
         .mermaid { direction: ltr; }
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            #sidebar { width: 100%; height: auto; position: static; padding: 15px; border-bottom: 2px solid #495057; }
+            #content { margin-right: 0; padding: 20px 15px; }
+            table { display: block; overflow-x: auto; white-space: nowrap; }
+        }
     </style>
 </head>
 <body>
